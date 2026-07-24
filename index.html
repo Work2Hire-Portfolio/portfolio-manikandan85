@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Professional portfolio of Dr Manikandan Jayapal, Associate Professor and Assistant Director - Placement and Training at VIT Bhopal University, focused on academic leadership, computer networks, cybersecurity, vehicular networks, machine learning, bio-inspired computing, and IoT." />
+  <meta name="keywords" content="Dr Manikandan Jayapal, Associate Professor, VIT Bhopal University, Placement and Training, Computer Networks, Cybersecurity, Vehicular Networks, Machine Learning, Internet of Things, Academic Leadership" />
+  <meta name="author" content="Dr Manikandan Jayapal" />
+  <title>Dr Manikandan Jayapal | Academic Leadership &amp; Computer Networks</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0b1020;
+      --bg-soft: #11182d;
+      --bg-card: rgba(255, 255, 255, 0.075);
+      --bg-card-strong: rgba(255, 255, 255, 0.11);
+      --text: #f8fafc;
+      --muted: #cbd5e1;
+      --muted-2: #94a3b8;
+      --gold: #d6b56d;
+      --gold-soft: rgba(214, 181, 109, 0.18);
+      --blue: #6ea8ff;
+      --green: #50d890;
+      --border: rgba(255, 255, 255, 0.13);
+      --shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+      --radius-xl: 28px;
+      --radius-lg: 20px;
+      --radius-md: 14px;
+      --max: 1180px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(214, 181, 109, 0.18), transparent 34%),
+        radial-gradient(circle at top right, rgba(110, 168, 255, 0.17), transparent 35%),
+        linear-gradient(145deg, #070b16 0%, #0b1020 45%, #111827 100%);
+      color: var(--text);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .page-shell {
+      width: min(var(--max), calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    .premium-glow {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: -1;
+      opacity: 0.65;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.035) 1px, transparent 1px);
+      background-size: 72px 72px;
+      mask-image: linear-gradient(to bottom, black, transparent 80%);
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(18px);
+      background: rgba(7, 11, 22, 0.76);
+      border-bottom: 1px solid var(--border);
+    }
+
+    nav {
+      width: min(var(--max), calc(100% - 40px));
+      margin: 0 auto;
+      min-height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+    }
+
+    .brand-mark {
+      width: 42px;
+      height: 42px;
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, var(--gold), #fff0ba);
+      color: #101827;
+      box-shadow: 0 14px 40px rgba(214, 181, 109, 0.24);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      color: var(--muted);
+      font-size: 0.94rem;
+      font-weight: 600;
+    }
+
+    .nav-links a {
+      transition: color 0.25s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--gold);
+    }
+
+    .nav-cta {
+      padding: 10px 16px;
+      border: 1px solid rgba(214, 181, 109, 0.38);
+      border-radius: 999px;
+      color: var(--gold);
+      background: var(--gold-soft);
+    }
+
+    .hero {
+      padding: 92px 0 56px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.08fr 0.92fr;
+      gap: 34px;
+      align-items: stretch;
+    }
+
+    .hero-panel {
+      padding: 44px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-xl);
+      background:
+        linear-gradient(145deg, rgba(255,255,255,0.11), rgba(255,255,255,0.045)),
+        radial-gradient(circle at top right, rgba(214,181,109,0.16), transparent 38%);
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-panel::after {
+      content: "";
+      position: absolute;
+      width: 260px;
+      height: 260px;
+      border-radius: 50%;
+      right: -90px;
+      bottom: -120px;
+      background: rgba(110, 168, 255, 0.14);
+      filter: blur(10px);
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--gold);
+      background: var(--gold-soft);
+      border: 1px solid rgba(214, 181, 109, 0.26);
+      padding: 8px 13px;
+      border-radius: 999px;
+      font-size: 0.84rem;
+      font-weight: 700;
+      margin-bottom: 24px;
+    }
+
+    .eyebrow span {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--green);
+      box-shadow: 0 0 0 5px rgba(80, 216, 144, 0.12);
+    }
+
+    h1 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(3rem, 7vw, 5.8rem);
+      line-height: 0.96;
+      letter-spacing: -0.06em;
+      max-width: 760px;
+      margin-bottom: 22px;
+    }
+
+    .hero-title-accent {
+      color: var(--gold);
+    }
+
+    .hero-subtitle {
+      font-size: clamp(1.15rem, 2vw, 1.45rem);
+      color: var(--muted);
+      max-width: 780px;
+      margin-bottom: 30px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 28px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 13px 20px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      font-weight: 800;
+      transition: transform 0.25s ease, background 0.25s ease, border 0.25s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--gold), #fff0ba);
+      color: #111827;
+      border-color: transparent;
+    }
+
+    .btn-secondary {
+      background: rgba(255,255,255,0.07);
+      color: var(--text);
+    }
+
+    .profile-card {
+      border: 1px solid var(--border);
+      border-radius: var(--radius-xl);
+      background: rgba(255,255,255,0.07);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .profile-top {
+      padding: 32px;
+      background:
+        radial-gradient(circle at top left, rgba(214,181,109,0.24), transparent 42%),
+        linear-gradient(145deg, rgba(255,255,255,0.12), rgba(255,255,255,0.045));
+    }
+
+    .avatar {
+      width: 132px;
+      height: 132px;
+      border-radius: 30px;
+      display: block;
+      object-fit: cover;
+      object-position: center top;
+      margin-bottom: 22px;
+      border: 2px solid rgba(214, 181, 109, 0.42);
+      box-shadow: 0 20px 45px rgba(0,0,0,0.28);
+    }
+
+    .profile-top h2 {
+      font-size: 1.65rem;
+      letter-spacing: -0.04em;
+      margin-bottom: 8px;
+    }
+
+    .profile-top p {
+      color: var(--muted);
+      font-weight: 500;
+    }
+
+    .profile-meta {
+      padding: 28px 32px;
+      display: grid;
+      gap: 18px;
+    }
+
+    .meta-item {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 14px;
+    }
+
+    .meta-item:last-child {
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .meta-label {
+      color: var(--muted-2);
+      font-size: 0.86rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .meta-value {
+      color: var(--text);
+      font-weight: 700;
+      text-align: right;
+    }
+
+    section {
+      padding: 64px 0;
+    }
+
+    .section-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 30px;
+      margin-bottom: 30px;
+    }
+
+    .section-kicker {
+      color: var(--gold);
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      font-size: 0.78rem;
+      margin-bottom: 10px;
+    }
+
+    .section-title {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(2rem, 4vw, 3.3rem);
+      line-height: 1;
+      letter-spacing: -0.045em;
+    }
+
+    .section-note {
+      color: var(--muted);
+      max-width: 480px;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+      margin-top: 28px;
+    }
+
+    .stat-card {
+      padding: 24px;
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border);
+      background: var(--bg-card);
+    }
+
+    .stat-number {
+      color: var(--gold);
+      font-size: 2.1rem;
+      font-weight: 900;
+      letter-spacing: -0.06em;
+      margin-bottom: 4px;
+    }
+
+    .stat-label {
+      color: var(--muted);
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .about-card {
+      padding: 34px;
+      border-radius: var(--radius-xl);
+      border: 1px solid var(--border);
+      background: linear-gradient(145deg, rgba(255,255,255,0.09), rgba(255,255,255,0.045));
+      box-shadow: var(--shadow);
+    }
+
+    .about-card p {
+      color: var(--muted);
+      font-size: 1.08rem;
+      max-width: 970px;
+    }
+
+    .skills-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .skill-pill {
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.075);
+      border: 1px solid var(--border);
+      color: var(--muted);
+      font-weight: 700;
+      font-size: 0.92rem;
+    }
+
+    .skill-pill.featured {
+      background: var(--gold-soft);
+      color: var(--gold);
+      border-color: rgba(214, 181, 109, 0.25);
+    }
+
+    .timeline {
+      display: grid;
+      gap: 22px;
+    }
+
+    .timeline-card {
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      gap: 28px;
+      padding: 30px;
+      border-radius: var(--radius-xl);
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,0.07);
+      box-shadow: 0 18px 60px rgba(0,0,0,0.2);
+    }
+
+    .timeline-date {
+      color: var(--gold);
+      font-weight: 900;
+      margin-bottom: 12px;
+    }
+
+    .timeline-role {
+      font-size: 1.45rem;
+      letter-spacing: -0.04em;
+      margin-bottom: 4px;
+    }
+
+    .timeline-company {
+      color: var(--muted);
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .timeline-desc {
+      color: var(--muted);
+      margin-bottom: 18px;
+    }
+
+    .achievement-list {
+      list-style: none;
+      display: grid;
+      gap: 10px;
+    }
+
+    .achievement-list li {
+      position: relative;
+      padding-left: 24px;
+      color: var(--muted);
+    }
+
+    .achievement-list li::before {
+      content: "\2726";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: var(--gold);
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px;
+    }
+
+    .project-card {
+      padding: 30px;
+      border-radius: var(--radius-xl);
+      border: 1px solid var(--border);
+      background:
+        radial-gradient(circle at top right, rgba(214,181,109,0.12), transparent 38%),
+        rgba(255,255,255,0.07);
+      min-height: 320px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .project-card h3 {
+      font-size: 1.45rem;
+      letter-spacing: -0.04em;
+      margin-bottom: 12px;
+    }
+
+    .project-card p {
+      color: var(--muted);
+      margin-bottom: 22px;
+    }
+
+    .stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+    }
+
+    .stack span {
+      color: var(--muted);
+      background: rgba(255,255,255,0.075);
+      border: 1px solid var(--border);
+      padding: 7px 10px;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      font-weight: 700;
+    }
+
+    .achievements-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+    .achievement-card {
+      padding: 22px;
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,0.065);
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    .education-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .education-card {
+      padding: 28px;
+      border-radius: var(--radius-xl);
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,0.07);
+    }
+
+    .education-card h3 {
+      font-size: 1.35rem;
+      letter-spacing: -0.04em;
+      margin-bottom: 8px;
+    }
+
+    .education-card p {
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    .contact-panel {
+      padding: 44px;
+      border-radius: var(--radius-xl);
+      border: 1px solid rgba(214,181,109,0.22);
+      background:
+        linear-gradient(135deg, rgba(214,181,109,0.18), rgba(110,168,255,0.09)),
+        rgba(255,255,255,0.07);
+      box-shadow: var(--shadow);
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 34px;
+      align-items: center;
+    }
+
+    .contact-panel h2 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(2.2rem, 4vw, 3.8rem);
+      line-height: 1;
+      letter-spacing: -0.05em;
+      margin-bottom: 18px;
+    }
+
+    .contact-panel p {
+      color: var(--muted);
+      font-size: 1.08rem;
+    }
+
+    .contact-links {
+      display: grid;
+      gap: 14px;
+    }
+
+    .contact-link {
+      padding: 16px 18px;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,0.07);
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      font-weight: 800;
+    }
+
+    .contact-link span {
+      color: var(--gold);
+    }
+
+    footer {
+      padding: 34px 0 46px;
+      color: var(--muted-2);
+      border-top: 1px solid var(--border);
+      text-align: center;
+      font-size: 0.92rem;
+    }
+
+    @media (max-width: 980px) {
+      .hero-grid,
+      .contact-panel,
+      .timeline-card {
+        grid-template-columns: 1fr;
+      }
+
+      .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .projects-grid,
+      .achievements-grid,
+      .education-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .section-head {
+        align-items: start;
+        flex-direction: column;
+      }
+
+      .nav-links {
+        display: none;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .page-shell,
+      nav {
+        width: min(100% - 24px, var(--max));
+      }
+
+      .hero {
+        padding-top: 58px;
+      }
+
+      .hero-panel,
+      .profile-top,
+      .profile-meta,
+      .about-card,
+      .timeline-card,
+      .project-card,
+      .contact-panel {
+        padding: 24px;
+      }
+
+      .stats-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .meta-item,
+      .contact-link {
+        flex-direction: column;
+        gap: 6px;
+      }
+
+      .meta-value {
+        text-align: left;
+      }
+    }
+  
+
+    .avatar-wrap { position: relative; width: 132px; height: 132px; margin-bottom: 22px; }
+    .avatar-wrap .avatar { margin-bottom: 0; position: relative; z-index: 2; background: #11182d; }
+    .avatar-fallback { position: absolute; inset: 0; display: grid; place-items: center; border-radius: 30px; background: linear-gradient(135deg, var(--gold), #fff0ba); color: #111827; font-size: 2.2rem; font-weight: 900; border: 2px solid rgba(214,181,109,.42); }
+    .objective-card { margin-top: 22px; padding: 24px; border-radius: var(--radius-lg); border: 1px solid rgba(214,181,109,.24); background: var(--gold-soft); color: var(--muted); }
+    .credential-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; }
+    .credential-card { padding:22px; border-radius:var(--radius-lg); border:1px solid var(--border); background:rgba(255,255,255,.065); color:var(--muted); font-weight:700; }
+    @media(max-width:980px){ .credential-grid{grid-template-columns:repeat(2,1fr);} }
+    @media(max-width:560px){ .credential-grid{grid-template-columns:1fr;} }
+    @media print {
+      header, .premium-glow, .hero-actions { display:none !important; }
+      body { background:#fff; color:#111; }
+      .hero, section { padding:24px 0; }
+      .hero-panel,.profile-card,.about-card,.timeline-card,.education-card,.achievement-card,.credential-card,.contact-panel,.stat-card { box-shadow:none; background:#fff; border:1px solid #ddd; break-inside:avoid; }
+      .hero-subtitle,.section-note,.about-card p,.timeline-desc,.achievement-list li,.education-card p,.achievement-card,.credential-card,.contact-panel p,.stat-label,.profile-top p { color:#333; }
+      .page-shell { width:94%; }
+    }
+</style>
+</head>
+<body>
+  <div class="premium-glow"></div>
+
+  <header>
+    <nav>
+      <a href="#top" class="brand">
+        <span class="brand-mark">MJ</span>
+        <span>Dr Manikandan Jayapal</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#research">Research</a>
+        <a href="#education">Education</a>
+        <a href="#contact" class="nav-cta">Connect</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="page-shell hero-grid">
+        <div class="hero-panel">
+          <div class="eyebrow"><span></span> Academic Leadership • Research • Placement &amp; Training</div>
+
+          <h1>
+            Advancing <span class="hero-title-accent">computer networks</span>,
+            cybersecurity, and student success.
+          </h1>
+
+          <p class="hero-subtitle">
+            Associate Professor and Assistant Director - Placement and Training at VIT Bhopal University,
+            with more than fifteen years of experience across teaching, program leadership, research, and institutional development.
+          </p>
+
+          <p class="hero-subtitle">
+            Research interests span computer networks and security, cyber security, vehicular networks,
+            machine learning algorithms, bio-inspired computing, and the Internet of Things.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://www.linkedin.com/in/dr-manikandan-jayapal-69177030" target="_blank" rel="noopener">
+              View LinkedIn
+            </a>
+            <a class="btn btn-secondary" href="#experience">
+              Explore Experience
+            </a>
+          </div>
+        </div>
+
+        <aside class="profile-card">
+          <div class="profile-top">
+            <div class="avatar-wrap">
+              <div class="avatar-fallback">MJ</div>
+              <img class="avatar" src="profile.jpg" alt="Portrait of Dr Manikandan Jayapal" onerror="this.style.display='none'">
+            </div>
+            <h2>Dr Manikandan Jayapal</h2>
+            <p>Associate Professor | Assistant Director - Placement and Training</p>
+          </div>
+
+          <div class="profile-meta">
+            <div class="meta-item">
+              <div class="meta-label">Institution</div>
+              <div class="meta-value">VIT Bhopal University</div>
+            </div>
+
+            <div class="meta-item">
+              <div class="meta-label">Location</div>
+              <div class="meta-value">Madhya Pradesh, India</div>
+            </div>
+
+            <div class="meta-item">
+              <div class="meta-label">Specialization</div>
+              <div class="meta-value">Networks, Security &amp; IoT</div>
+            </div>
+
+            <div class="meta-item">
+              <div class="meta-label">Leadership</div>
+              <div class="meta-value">Placement, Training &amp; Program Management</div>
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      <div class="page-shell stats-grid">
+        <div class="stat-card">
+          <div class="stat-number">15+</div>
+          <div class="stat-label">Years across teaching and academic leadership</div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-number">5</div>
+          <div class="stat-label">Higher-education institutions served</div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-number">4</div>
+          <div class="stat-label">Academic qualifications across computing and psychology</div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-number">6</div>
+          <div class="stat-label">Primary research and technology focus areas</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="page-shell">
+        <div class="section-head">
+          <div>
+            <div class="section-kicker">Professional Profile</div>
+            <h2 class="section-title">Academic leadership grounded in technology and people development.</h2>
+          </div>
+          <p class="section-note">
+            A multidisciplinary academic profile combining computer science, institutional leadership,
+            placement and training, business strategy, and an understanding of human behaviour.
+          </p>
+        </div>
+
+        <div class="about-card">
+          <p>
+            Dr Manikandan Jayapal is an academic leader and computer science educator with experience as an
+            Associate Professor, Assistant Director for Placement and Training, Program Chair, and Head of BCE.
+            His career reflects a sustained commitment to teaching, student development, institutional coordination,
+            and research in emerging networked systems. His technical interests include computer networks and security,
+            cyber security, vehicular networks, machine learning algorithms, bio-inspired computing, and the Internet of Things.
+          </p>
+
+          <div class="objective-card">
+            <strong>Professional Direction:</strong> To contribute to research and academic-industry collaboration in
+            computer networks, cyber security, vehicular communication, machine learning, bio-inspired computing,
+            and Internet of Things while strengthening student readiness and institutional outcomes.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="page-shell">
+        <div class="section-head">
+          <div>
+            <div class="section-kicker">Experience</div>
+            <h2 class="section-title">A progressive career in teaching, leadership, and student development.</h2>
+          </div>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-card">
+            <div>
+              <div class="timeline-date">July 2024 - Present</div>
+              <div class="meta-label">Bhopal, Madhya Pradesh</div>
+            </div>
+
+            <div>
+              <h3 class="timeline-role">Associate Professor &amp; Assistant Director - Placement and Training</h3>
+              <div class="timeline-company">VIT Bhopal University</div>
+              <p class="timeline-desc">
+                Combines academic responsibilities with institutional leadership in placement and training,
+                connecting student development, industry engagement, and career-readiness initiatives.
+              </p>
+              <ul class="achievement-list">
+                <li>Contributes to teaching and academic development within the university.</li>
+                <li>Supports placement and training strategy for student career readiness.</li>
+                <li>Works at the intersection of academic delivery, industry expectations, and student outcomes.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-card">
+            <div>
+              <div class="timeline-date">July 2021 - July 2024</div>
+              <div class="meta-label">VIT Bhopal University</div>
+            </div>
+
+            <div>
+              <h3 class="timeline-role">Senior Assistant Professor &amp; Program Chair / Head (BCE)</h3>
+              <div class="timeline-company">VIT Bhopal University</div>
+              <p class="timeline-desc">
+                Led academic and program-level responsibilities while continuing teaching and departmental coordination.
+              </p>
+              <ul class="achievement-list">
+                <li>Served in a program leadership role for BCE.</li>
+                <li>Coordinated academic activities and supported program administration.</li>
+                <li>Contributed to curriculum delivery and student engagement.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-card">
+            <div>
+              <div class="timeline-date">July 2020 - July 2021</div>
+              <div class="meta-label">Puttur, India</div>
+            </div>
+
+            <div>
+              <h3 class="timeline-role">Associate Professor</h3>
+              <div class="timeline-company">Siddharth Institute of Engineering &amp; Technology</div>
+              <p class="timeline-desc">
+                Delivered computer science education and contributed to departmental academic activities.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-card">
+            <div>
+              <div class="timeline-date">May 2019 - April 2020</div>
+              <div class="meta-label">Tamil Nadu, India</div>
+            </div>
+
+            <div>
+              <h3 class="timeline-role">Assistant Professor</h3>
+              <div class="timeline-company">Dr N.G.P. Institute of Technology</div>
+              <p class="timeline-desc">
+                Supported undergraduate engineering education through teaching and academic contribution.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-card">
+            <div>
+              <div class="timeline-date">June 2011 - May 2019</div>
+              <div class="meta-label">Tiruchengodu, Tamil Nadu</div>
+            </div>
+
+            <div>
+              <h3 class="timeline-role">Assistant Professor</h3>
+              <div class="timeline-company">K.S. Rangasamy College of Technology</div>
+              <p class="timeline-desc">
+                Built a strong foundation in teaching and research across computer networks, wireless mobile networks,
+                and clustering techniques in mobile ad hoc networks, alongside business planning and strategy development.
+              </p>
+              <ul class="achievement-list">
+                <li>Focused on computer networks and wireless mobile network concepts.</li>
+                <li>Explored clustering techniques in mobile ad hoc networks.</li>
+                <li>Contributed to business planning and strategy development activities.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="research">
+      <div class="page-shell">
+        <div class="section-head">
+          <div>
+            <div class="section-kicker">Research Interests</div>
+            <h2 class="section-title">Connected, secure, and intelligent computing systems.</h2>
+          </div>
+          <p class="section-note">
+            Research themes bridge communication networks, security, intelligent algorithms, mobility, and pervasive computing.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card">
+            <div>
+              <h3>Computer Networks &amp; Security</h3>
+              <p>
+                Research interest in reliable network design, wireless communication, network behaviour,
+                and security mechanisms for modern distributed environments.
+              </p>
+            </div>
+            <div class="stack">
+              <span>Computer Networks</span>
+              <span>Wireless Networks</span>
+              <span>Network Security</span>
+              <span>MANET</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div>
+              <h3>Cyber Security</h3>
+              <p>
+                Interest in protecting digital systems, communication infrastructure, and connected applications
+                through security-aware design and analysis.
+              </p>
+            </div>
+            <div class="stack">
+              <span>Cyber Security</span>
+              <span>Secure Systems</span>
+              <span>Risk Awareness</span>
+              <span>Network Protection</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div>
+              <h3>Vehicular Networks &amp; IoT</h3>
+              <p>
+                Exploration of connected mobility, vehicular communication, and Internet of Things ecosystems
+                where devices, infrastructure, and real-time data interact.
+              </p>
+            </div>
+            <div class="stack">
+              <span>Vehicular Networks</span>
+              <span>Internet of Things</span>
+              <span>Connected Mobility</span>
+              <span>Wireless Communication</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div>
+              <h3>Machine Learning &amp; Bio-Inspired Computing</h3>
+              <p>
+                Interest in applying machine learning algorithms and nature-inspired computational approaches
+                to optimization, classification, network intelligence, and complex engineering problems.
+              </p>
+            </div>
+            <div class="stack">
+              <span>Machine Learning</span>
+              <span>Bio-Inspired Computing</span>
+              <span>Algorithms</span>
+              <span>Optimization</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="page-shell">
+        <div class="section-head">
+          <div>
+            <div class="section-kicker">Capabilities</div>
+            <h2 class="section-title">Technical, academic, and leadership strengths.</h2>
+          </div>
+        </div>
+
+        <div class="skills-wrap">
+          <span class="skill-pill featured">Academic Leadership</span>
+          <span class="skill-pill featured">Placement &amp; Training</span>
+          <span class="skill-pill featured">Computer Networks</span>
+          <span class="skill-pill featured">Cyber Security</span>
+          <span class="skill-pill featured">Program Coordination</span>
+          <span class="skill-pill featured">Research</span>
+          <span class="skill-pill">Business Planning</span>
+          <span class="skill-pill">Business Strategy</span>
+          <span class="skill-pill">HTML</span>
+          <span class="skill-pill">Vehicular Networks</span>
+          <span class="skill-pill">Wireless Mobile Networks</span>
+          <span class="skill-pill">Mobile Ad Hoc Networks</span>
+          <span class="skill-pill">Machine Learning Algorithms</span>
+          <span class="skill-pill">Bio-Inspired Computing</span>
+          <span class="skill-pill">Internet of Things</span>
+          <span class="skill-pill">Teaching</span>
+          <span class="skill-pill">Student Development</span>
+          <span class="skill-pill">Institutional Coordination</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <div class="page-shell">
+        <div class="section-head">
+          <div>
+            <div class="section-kicker">Education</div>
+            <h2 class="section-title">A multidisciplinary academic foundation.</h2>
+          </div>
+          <p class="section-note">
+            Advanced qualifications in computer science and engineering, complemented by postgraduate study in psychology.
+          </p>
+        </div>
+
+        <div class="education-grid">
+          <article class="education-card">
+            <h3>Anna University Chennai</h3>
+            <p>Doctor of Philosophy (PhD), Computer Science<br>January 2012 - November 2018</p>
+          </article>
+
+          <article class="education-card">
+            <h3>Indira Gandhi National Open University</h3>
+            <p>Master of Arts (MA), Psychology<br>June 2017 - May 2020</p>
+          </article>
+
+          <article class="education-card">
+            <h3>Anna University</h3>
+            <p>Master of Engineering (MEng), Computer Engineering<br>June 2008 - April 2010</p>
+          </article>
+
+          <article class="education-card">
+            <h3>Anna University Chennai</h3>
+            <p>Bachelor of Technology (BTech), Information Technology<br>June 2003 - May 2007</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="achievements">
+      <div class="page-shell">
+        <div class="section-head">
+          <div>
+            <div class="section-kicker">Credentials &amp; Languages</div>
+            <h2 class="section-title">Professional development and communication.</h2>
+          </div>
+        </div>
+
+        <div class="credential-grid">
+          <div class="credential-card">Power BI Workshop</div>
+          <div class="credential-card">English</div>
+          <div class="credential-card">Tamil</div>
+          <div class="credential-card">Business Planning &amp; Strategy</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="page-shell">
+        <div class="contact-panel">
+          <div>
+            <div class="section-kicker">Contact</div>
+            <h2>Connect for academic, research, and industry collaboration.</h2>
+            <p>
+              Dr Manikandan's work brings together computer science education, academic leadership,
+              placement and training, and research in secure intelligent networked systems.
+            </p>
+          </div>
+
+          <div class="contact-links">
+            <a class="contact-link" href="https://www.linkedin.com/in/dr-manikandan-jayapal-69177030" target="_blank" rel="noopener">
+              LinkedIn <span>&#8599;</span>
+            </a>
+
+            <div class="contact-link">
+              Location <span>Madhya Pradesh, India</span>
+            </div>
+
+            <div class="contact-link">
+              Institution <span>VIT Bhopal University</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    Portfolio powered by Work2Hire
+  </footer>
+</body>
+</html>
